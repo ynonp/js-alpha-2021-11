@@ -1,37 +1,6 @@
-# Lab2 - JavaScript Syntax
+- [ ] Write a program that shows a button on screen. Each time someone clicks the button the page's background color should change. Use let and const.
 
-## const/let
-[ ] Write a program that randomizes 10 numbers from 1 to 100 and print out their average. Use const and let.
-
-[ ] Write a program that shows a button and a number on screen. Each time someone clicks on the button the number increases. Use let and const.
-
-[ ] Write a program that shows a button on screen. Each time someone clicks the button the page's background color should change. Use let and const.
-
-[ ] Move the lines in the following code snippet (without changing their contents) so the following code will work and print: 10, 5, 10
-
-```
-let x = 10;
-{
-  console.log(x);
-  let x = 5;
-  console.log(x);
-}
-
-console.log(x);
-```
-
-Why did the first version not work?
-
-
-[ ] The code in this link:
-https://codepen.io/ynonp/pen/KRaBbG
-
-Shows 4 buttons. The developer wanted each button to print the number that's written on it, but unfortunately all print out "4". Fix the code using let. Can you explain what happened?
-
-
-## Classes and Arrow Functions
-
-[ ] Write a class called Summer to make the following code work:
+- [ ] Write a class called Summer to make the following code work:
 
 ```
 const x = new Summer();
@@ -51,8 +20,7 @@ console.log(y.result);
 ```
 
 
-
-[ ] Write the classes Car and Race so the following code will print "green"
+- [ ] Write the classes Car and Race so the following code will print "green"
 
 ```
 const c1 = new Car('blue', 20);
@@ -66,15 +34,54 @@ race.add(c3);
 console.log(race.getWinner());
 ```
 
-
-
-
-[ ] Fix the code in the following link:
+- [ ] Fix the code in the following link:
 https://codepen.io/ynonp/pen/yLoEGWW
 
-So when clicking on the button it will show the alert "Yay JavaScript FTW"
+## Destructuring
+
+- [ ] The following function takes a parameters object. Fill in the missing line so that the function prints the correct output:
+
+```
+function printTimes(options) {
+  // TODO - fill code (1 line) here
+
+  for (let i=0; i < times; i++) {
+    console.log(`${String(i + 1).padStart(2, '0')} ${text}`);
+  }
+}
+
+// print 'hello world' ten times:
+printTimes({ text: 'hello world', times: 10 });
+```
 
 
+- [ ] Now modify the function so the following code will use a default value of 5:
+
+```
+// print 'hello world' five times:
+printTimes({ text: 'hello world' });
+```
+
+- [ ] The following two code snippets will add an item to an array:
+
+```
+let arr1 = [10, 20, 30, 40];
+let arr2 = [10, 20, 30, 40];
+
+arr1.push(50);
+arr2 = [...arr2, 50];
+
+console.log(arr1);
+console.log(arr2);
+```
+
+Both the console.log calls now print the same thing.
+
+What is the difference between the two methods? And how can you change the program to make the difference more visible?
+
+  
+  
+  
 [ ] (Bonus if time permits)
 Create a class called EventBus that manages custom events in a system. The class provides two methods:
 
@@ -101,44 +108,4 @@ bus.emit('go', 10);
 // this will call "three" passing 10 as the value for "x"
 ```
 
-## Destructuring
 
-[ ] The following function takes a parameters object. Fill in the missing line so that the function prints the correct output:
-
-```
-function printTimes(options) {
-  // TODO - fill code (1 line) here
-
-  for (let i=0; i < times; i++) {
-    console.log(`${String(i + 1).padStart(2, '0')} ${text}`);
-  }
-}
-
-// print 'hello world' ten times:
-printTimes({ text: 'hello world', times: 10 });
-```
-
-
-[ ] Now modify the function so the following code will use a default value of 5:
-
-```
-// print 'hello world' five times:
-printTimes({ text: 'hello world' });
-```
-
-[ ] The following two code snippets will add an item to an array:
-
-```
-let arr1 = [10, 20, 30, 40];
-let arr2 = [10, 20, 30, 40];
-
-arr1.push(50);
-arr2 = [...arr2, 50];
-
-console.log(arr1);
-console.log(arr2);
-```
-
-Both the console.log calls now print the same thing.
-
-What is the difference between the two methods? And how can you change the program to make the difference more visible?
