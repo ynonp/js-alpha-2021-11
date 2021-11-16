@@ -1,5 +1,7 @@
 - [ ] Write a program that shows a button on screen. Each time someone clicks the button the page's background color should change. Use let and const.
 
+Solution: https://codesandbox.io/s/zen-lamport-glcpk?file=/src/index.js:0-311
+
 - [ ] Write a class called Summer to make the following code work:
 
 ```
@@ -17,6 +19,33 @@ console.log(x.result);
 
 // prints: 100
 console.log(y.result);
+```
+
+Solution:
+
+```
+class Summer {
+    constructor() {
+        this.result = 0;
+    }
+
+    add(...numbers) {
+        // numbers is now an array [10, 20]
+        /*
+        for (let i=0; i < numbers.length; i++) {
+            this.result += numbers[i];
+        }
+        */
+        
+        /*
+        for (let n of numbers) {
+            this.result += n;
+        }
+        */
+
+        this.result += numbers.reduce((a, b) => a + b);        
+    }
+}
 ```
 
 

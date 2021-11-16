@@ -16,9 +16,9 @@ Demos: https://codesandbox.io/s/long-fast-ff8bn?file=/src/demo2.js
 
 ## New Syntax - 2 hours
 [x] const and let
-[ ] classes (brief)
-[ ] arrow functions
-[ ] function parameters
+[x] classes (brief)
+[x] arrow functions
+[x] function parameters
 [x] destructuring
 
 Demos: https://codesandbox.io/s/wonderful-visvesvaraya-6h517?file=/src/demo2.js
