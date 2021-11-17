@@ -2,18 +2,18 @@
 
 ### Hello Vue
 
-[ ] A First Vue Project
-[ ] Vue Component Syntax: setup script vs. old style object component
-[ ] Handling props
-[ ] prop types
+[x] A First Vue Project
+[x] Vue Component Syntax: setup script vs. old style object component
+[x] Handling props
+[x] prop types
 
 ### Lab 4
 
 ### Vue Reactivity
 
-[ ] Creating a Reactive variable with ref()
+[x] Creating a Reactive variable with ref()
 [ ] Saving a reactive complext state with reactive()
-[ ] Demo: Create a Counter component using `ref`
+[x] Demo: Create a Counter component using `ref`
 [ ] Demo: Fetching remote data
 [ ] Demo: Automatically fetching remote data with `watchEffect`
 
