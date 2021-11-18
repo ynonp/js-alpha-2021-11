@@ -8,6 +8,9 @@ const db = [
 exports.db = {
     getProductById(id) {
         return db.find(p => p.id === Number(id));
+    },
+    getAllProducts() {
+        return db;
     }
 };
 // module.exports = db;

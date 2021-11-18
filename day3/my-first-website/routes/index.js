@@ -8,11 +8,21 @@ router.get('/product2', function(req, res, next) {
   const p = req.query;
   res.send(p);
 });
+let count = 0;
+// redis
 
 // http://localhost:3000/product/18
-router.get('/product/:id', function(req, res, next) {
+// REST
+router.get('/products/:id', function(req, res, next) {
+  throw new Error("bye bye");
+  count++;
   const id = req.params.id;
   const p = db.getProductById(id);
+  res.send(p);
+});
+
+router.get('/products', function(req, res, next) {
+  const p = db.getAllProducts();
   res.send(p);
 });
 

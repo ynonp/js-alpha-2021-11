@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 const cors = require('cors');
 
 var app = express();
-
+// Connect to DB
 app.use(cors());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

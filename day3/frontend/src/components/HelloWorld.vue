@@ -1,17 +1,22 @@
 <script setup>
-import { ref } from 'vue';
-const info = ref({});
+import { onMounted, ref } from 'vue';
+const products = ref({});
 
-async function showInfo() {
-  const res = await fetch('http://localhost:3000/product/3');
+async function load() {
+  const res = await fetch('http://localhost:3000/products');
   const data = await res.json();
-  info.value = data;
+  products.value = data;
 }
+
+load();
+
+
 </script>
 
 <template>
-  <button @click="showInfo">Load Data</button>
-  <pre>{{info}}</pre>
+  <ul>
+    <li v-for="p in products">{{p.name}} - {{p.price}}$</li>
+  </ul>
 </template>
 
 <style scoped>
