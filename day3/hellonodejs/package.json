@@ -1,0 +1,16 @@
+{
+  "name": "hellonodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "files.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "yay": "cowsay yay",
+    "sol1": "node sol1.js"
+  },
+  "dependencies": {
+    "lodash": "4.17.21"
+  },
+  "author": "",
+  "license": "ISC"
+}

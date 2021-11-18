@@ -1,10 +1,11 @@
 # Node.JS + Express
 
 ## Hello Node.JS
-[ ] Installing and running a first Node.JS program
-[ ] Using node.js REPL
-[ ] Reading and writing files
-[ ] require and import
+[x] Installing and running a first Node.JS program
+[x] Using node.js REPL
+[x] Reading and writing files
+[x] require and import
+[ ] Packages
 
 ## Lab 8
 
